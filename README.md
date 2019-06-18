@@ -34,8 +34,10 @@ dependencies {
 
 
 </br></br>
-## 사용법
 
+## 사용법
+*Repository의 샘플앱을 실행하시고 코드를 보시면 더 쉽게 이해하실 수 있습니다.*
+</br></br>
 ### 1. ClusterItem 구현
 - 클러스터링에 쓰일 Model에 `TedClusterItem` interface를 implements
 - `getTedLatLng()`함수를 구현
