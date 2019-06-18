@@ -107,7 +107,7 @@ TedNaverClustering.with(this, naverMap)
 * `setAlgorithm()`: 직접 구현한 알고리즘 설정
 
 
-
+</br></br>
 ## FAQ
 ### 클러스터링을 만드는 알고리즘은 어떻게 되나요?
 - `TedNaverMapClustering`의 클러스터링 알고리즘은 GoogleMap의 클러스터링 알고리즘과 같은 방식으로 클러스터링 됩니다.
