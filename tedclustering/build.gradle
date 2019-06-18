@@ -25,3 +25,5 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${versions.kotlin}"
     implementation deps.androidx.appcompat
 }
+
+apply from: rootProject.file('publish.gradle')
