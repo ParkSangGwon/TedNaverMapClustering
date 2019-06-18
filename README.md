@@ -111,8 +111,7 @@ TedNaverClustering.with(this, naverMap)
 ## FAQ
 ### 클러스터링을 만드는 알고리즘은 어떻게 되나요?
 - `TedNaverMapClustering`의 클러스터링 알고리즘은 GoogleMap의 클러스터링 알고리즘과 같은 방식으로 클러스터링 됩니다.
-- [Efficient Filtering and Clustering Mechanism for Google Maps](http://www.joams.com/uploadfile/2013/0426/20130426033622753.pdf)
-- [NonHierarchicalDistanceBasedAlgorithm](https://github.com/googlemaps/android-maps-utils/blob/master/library/src/com/google/maps/android/clustering/algo/NonHierarchicalDistanceBasedAlgorithm.java)
+- 자세한 구현방식이 궁금하시다면 [Efficient Filtering and Clustering Mechanism for Google Maps](http://www.joams.com/uploadfile/2013/0426/20130426033622753.pdf)을 읽어보시면 도움이 되실겁니다.
 - 본인만의 알고리즘으로 클러스터링을 하길 원하는경우 [ScreenBasedAlgorithm](https://github.com/ParkSangGwon/TedNaverMapClustering/blob/8e709a1b6238962b4207d2e73db28d3d5941fb5e/tedclustering/src/main/java/ted/gun0912/clustering/clustering/algo/ScreenBasedAlgorithm.kt)를 상속받아 알고리즘을 구현하고 `setAlgorithm()`로 설정해주면 됩니다.
 
 ### 다른 지도도 비슷한 방식으로 클러스터링을 만들 수 있나요?
