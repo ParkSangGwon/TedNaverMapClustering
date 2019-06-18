@@ -115,6 +115,11 @@ TedNaverClustering.with(this, naverMap)
 - [NonHierarchicalDistanceBasedAlgorithm](https://github.com/googlemaps/android-maps-utils/blob/master/library/src/com/google/maps/android/clustering/algo/NonHierarchicalDistanceBasedAlgorithm.java)
 - 본인만의 알고리즘으로 클러스터링을 하길 원하는경우 [ScreenBasedAlgorithm](https://github.com/ParkSangGwon/TedNaverMapClustering/blob/8e709a1b6238962b4207d2e73db28d3d5941fb5e/tedclustering/src/main/java/ted/gun0912/clustering/clustering/algo/ScreenBasedAlgorithm.kt)를 상속받아 알고리즘을 구현하고 `setAlgorithm()`로 설정해주면 됩니다.
 
+### 다른 지도도 비슷한 방식으로 클러스터링을 만들 수 있나요?
+- `TedNaverMapClustering`은 네이버지도 뿐만 아니라 어떤 지도도 클러스터링을 지원할 수 있도록 설계되어 있습니다.
+- [tedclustering](https://github.com/ParkSangGwon/TedNaverMapClustering/tree/master/tedclustering) 모듈은 특정 지도에 속해있지 않기 때문에 클러스터링이 필요한 어떤 지도든 확장가능합니다.
+- 하지만 현재 [Google지도](https://developers.google.com/maps/documentation/android-sdk/utility/marker-clustering)와 [Tmap지도](http://tmapapi.sktelecom.com/main.html#android/docs/androidDoc.TMapMarkerItem_setEnableClustering)는 공식적으로 클러스터링을 지원하고 있기 때문에 추후 클러스터링이 필요한 지도가 있다면 라이브러리형태로 추가되서 지원할 예정입니다.
+
 </br></br>
 ## License 
  ```code
