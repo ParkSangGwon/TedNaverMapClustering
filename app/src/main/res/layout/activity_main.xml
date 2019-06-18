@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_java"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Java" />
+
+    <Button
+        android:id="@+id/btn_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="기본" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="동적 추가" />
+
+
+    <Button
+        android:id="@+id/btn_custom_marker_cluster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="커스텀 마커/클러스터링" />
+
+
+    <Button
+        android:id="@+id/btn_click_listener"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click Listener" />
+</LinearLayout>

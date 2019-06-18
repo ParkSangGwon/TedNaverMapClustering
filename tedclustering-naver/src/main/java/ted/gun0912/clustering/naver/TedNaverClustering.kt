@@ -1,0 +1,33 @@
+package ted.gun0912.clustering.naver
+
+import android.content.Context
+import com.naver.maps.map.NaverMap
+import com.naver.maps.map.overlay.Marker
+import com.naver.maps.map.overlay.OverlayImage
+import ted.gun0912.clustering.BaseBuilder
+import ted.gun0912.clustering.TedClustering
+import ted.gun0912.clustering.clustering.ClusterItem
+import ted.gun0912.clustering.clustering.ClusterManager
+
+class TedNaverClustering<C : ClusterItem>(clusterManager: ClusterManager<TedNaverClustering<C>, C, Marker, TedNaverMarker, NaverMap, OverlayImage>) :
+    TedClustering<TedNaverClustering<C>, C, Marker, TedNaverMarker, NaverMap, OverlayImage>(
+        clusterManager
+    ) {
+
+    companion object {
+        @JvmStatic
+        fun <C : TedNaverClusterItem> with(context: Context, map: NaverMap) =
+            Builder<C>(context, map)
+    }
+
+    class Builder<C : TedNaverClusterItem>(context: Context, map: NaverMap) :
+        BaseBuilder<TedNaverClustering<C>, C, Marker, TedNaverMarker, NaverMap, OverlayImage>(
+            context,
+            TedNaverMap(map)
+        ) {
+        override fun make(): TedNaverClustering<C> {
+            return TedNaverClustering(ClusterManager(this))
+        }
+    }
+
+}
