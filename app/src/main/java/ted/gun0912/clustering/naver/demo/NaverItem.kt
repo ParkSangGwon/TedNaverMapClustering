@@ -17,12 +17,13 @@
 package ted.gun0912.clustering.naver.demo
 
 import com.naver.maps.geometry.LatLng
-import ted.gun0912.clustering.naver.TedNaverClusterItem
+import ted.gun0912.clustering.clustering.TedClusterItem
+import ted.gun0912.clustering.geometry.TedLatLng
 
-data class NaverItem(var position: LatLng) : TedNaverClusterItem() {
+data class NaverItem(var position: LatLng) : TedClusterItem {
 
-    override fun getLatLng(): LatLng {
-        return position
+    override fun getTedLatLng(): TedLatLng {
+        return TedLatLng(position.latitude, position.longitude)
     }
 
     /**

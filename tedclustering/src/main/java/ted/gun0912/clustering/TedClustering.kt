@@ -1,10 +1,10 @@
 package ted.gun0912.clustering
 
-import ted.gun0912.clustering.clustering.ClusterItem
+import ted.gun0912.clustering.clustering.TedClusterItem
 import ted.gun0912.clustering.clustering.ClusterManager
 import ted.gun0912.clustering.clustering.algo.ScreenBasedAlgorithm
 
-abstract class TedClustering<Clustering, C : ClusterItem, RealMarker, Marker : TedMarker<ImageDescriptor>, Map, ImageDescriptor>(
+abstract class TedClustering<Clustering, C : TedClusterItem, RealMarker, Marker : TedMarker<ImageDescriptor>, Map, ImageDescriptor>(
     private val clusterManager: ClusterManager<Clustering, C, RealMarker, Marker, Map, ImageDescriptor>
 ) {
 

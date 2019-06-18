@@ -3,9 +3,9 @@ package ted.gun0912.clustering
 import android.content.Context
 import android.view.View
 import ted.gun0912.clustering.clustering.Cluster
-import ted.gun0912.clustering.clustering.ClusterItem
+import ted.gun0912.clustering.clustering.TedClusterItem
 
-abstract class BaseBuilder<Clustering, C : ClusterItem, RealMarker, TM : TedMarker<ImageDescriptor>, Map, ImageDescriptor>(
+abstract class BaseBuilder<Clustering, C : TedClusterItem, RealMarker, TM : TedMarker<ImageDescriptor>, Map, ImageDescriptor>(
     internal val context: Context,
     internal val map: TedMap<RealMarker, TM, ImageDescriptor>,
     internal var markerClickListener: ((C) -> Unit)? = null,

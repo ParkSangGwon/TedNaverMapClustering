@@ -18,13 +18,13 @@ package ted.gun0912.clustering.clustering.algo
 
 import androidx.collection.LruCache
 import ted.gun0912.clustering.clustering.Cluster
-import ted.gun0912.clustering.clustering.ClusterItem
+import ted.gun0912.clustering.clustering.TedClusterItem
 import java.util.concurrent.locks.ReentrantReadWriteLock
 
 /**
  * Optimistically fetch clusters for adjacent zoom levels, caching them as necessary.
  */
-class PreCachingAlgorithmDecorator<T : ClusterItem>(private val mAlgorithm: Algorithm<T>) :
+class PreCachingAlgorithmDecorator<T : TedClusterItem>(private val mAlgorithm: Algorithm<T>) :
     Algorithm<T> {
 
     // TODO: evaluate maxSize parameter for LruCache.

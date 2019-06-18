@@ -1,14 +1,14 @@
 package ted.gun0912.clustering.clustering.algo
 
 import ted.gun0912.clustering.clustering.Cluster
-import ted.gun0912.clustering.clustering.ClusterItem
+import ted.gun0912.clustering.clustering.TedClusterItem
 import ted.gun0912.clustering.geometry.TedLatLng
 
 
 /**
  * A cluster whose center is determined upon creation.
  */
-class StaticCluster<T : ClusterItem>(override val position: TedLatLng) : Cluster<T> {
+class StaticCluster<T : TedClusterItem>(override val position: TedLatLng) : Cluster<T> {
     private val mItems = ArrayList<T>()
 
     override val items: Collection<T>

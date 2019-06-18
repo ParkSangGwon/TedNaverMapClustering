@@ -1,10 +1,10 @@
 package ted.gun0912.clustering.clustering.algo
 
 import ted.gun0912.clustering.clustering.Cluster
-import ted.gun0912.clustering.clustering.ClusterItem
+import ted.gun0912.clustering.clustering.TedClusterItem
 
 
-interface Algorithm<T : ClusterItem> {
+interface Algorithm<T : TedClusterItem> {
 
     val items: Collection<T>
 

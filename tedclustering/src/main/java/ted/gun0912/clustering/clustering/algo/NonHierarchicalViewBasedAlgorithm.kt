@@ -1,6 +1,6 @@
 package ted.gun0912.clustering.clustering.algo
 
-import ted.gun0912.clustering.clustering.ClusterItem
+import ted.gun0912.clustering.clustering.TedClusterItem
 import ted.gun0912.clustering.geometry.Bounds
 import ted.gun0912.clustering.geometry.TedCameraPosition
 import ted.gun0912.clustering.geometry.TedLatLng
@@ -8,7 +8,7 @@ import ted.gun0912.clustering.projection.SphericalMercatorProjection
 import ted.gun0912.clustering.quadtree.PointQuadTree
 
 
-class NonHierarchicalViewBasedAlgorithm<T : ClusterItem>(
+class NonHierarchicalViewBasedAlgorithm<T : TedClusterItem>(
     private var mViewWidth: Int,
     private var mViewHeight: Int
 ) : NonHierarchicalDistanceBasedAlgorithm<T>(), ScreenBasedAlgorithm<T> {

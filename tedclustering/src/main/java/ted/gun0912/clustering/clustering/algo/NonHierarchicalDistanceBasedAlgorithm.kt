@@ -1,7 +1,7 @@
 package ted.gun0912.clustering.clustering.algo
 
 import ted.gun0912.clustering.clustering.Cluster
-import ted.gun0912.clustering.clustering.ClusterItem
+import ted.gun0912.clustering.clustering.TedClusterItem
 import ted.gun0912.clustering.geometry.Bounds
 import ted.gun0912.clustering.geometry.Point
 import ted.gun0912.clustering.geometry.TedLatLng
@@ -22,7 +22,7 @@ import ted.gun0912.clustering.quadtree.PointQuadTree
  * <p/>
  * Clusters have the center of the first element (not the centroid of the items within it).
  */
-open class NonHierarchicalDistanceBasedAlgorithm<T : ClusterItem> : Algorithm<T> {
+open class NonHierarchicalDistanceBasedAlgorithm<T : TedClusterItem> : Algorithm<T> {
 
     override var maxDistanceBetweenClusteredItems = DEFAULT_MAX_DISTANCE_AT_ZOOM
 
@@ -153,7 +153,7 @@ open class NonHierarchicalDistanceBasedAlgorithm<T : ClusterItem> : Algorithm<T>
         )
     }
 
-    internal class QuadItem<T : ClusterItem>(val mClusterItem: T) : PointQuadTree.Item, Cluster<T> {
+    internal class QuadItem<T : TedClusterItem>(val mClusterItem: T) : PointQuadTree.Item, Cluster<T> {
         override val point: Point
         override val position: TedLatLng = mClusterItem.getTedLatLng()
         override val items: Set<T>

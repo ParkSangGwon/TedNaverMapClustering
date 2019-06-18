@@ -16,7 +16,7 @@
 
 package ted.gun0912.clustering.clustering.algo
 
-import ted.gun0912.clustering.clustering.ClusterItem
+import ted.gun0912.clustering.clustering.TedClusterItem
 import ted.gun0912.clustering.geometry.TedCameraPosition
 
 
@@ -26,7 +26,7 @@ import ted.gun0912.clustering.geometry.TedCameraPosition
  * @param <T>
 </T> */
 
-interface ScreenBasedAlgorithm<T : ClusterItem> : Algorithm<T> {
+interface ScreenBasedAlgorithm<T : TedClusterItem> : Algorithm<T> {
 
     fun shouldReClusterOnMapMovement(): Boolean
 

@@ -19,7 +19,7 @@ import android.view.animation.DecelerateInterpolator
 import androidx.annotation.ColorInt
 import ted.gun0912.clustering.*
 import ted.gun0912.clustering.clustering.Cluster
-import ted.gun0912.clustering.clustering.ClusterItem
+import ted.gun0912.clustering.clustering.TedClusterItem
 import ted.gun0912.clustering.clustering.ClusterManager
 import ted.gun0912.clustering.geometry.Point
 import ted.gun0912.clustering.geometry.TedLatLng
@@ -34,7 +34,7 @@ import kotlin.collections.ArrayList
 import kotlin.collections.HashMap
 
 
-internal class ClusterRenderer<Clustering, T : ClusterItem, RealMarker, Marker : TedMarker<ImageDescriptor>, Map, ImageDescriptor>(
+internal class ClusterRenderer<Clustering, T : TedClusterItem, RealMarker, Marker : TedMarker<ImageDescriptor>, Map, ImageDescriptor>(
     private val builder: BaseBuilder<Clustering, T, RealMarker, Marker, Map, ImageDescriptor>,
     private val mClusterManager: ClusterManager<Clustering, T, RealMarker, Marker, Map, ImageDescriptor>
 ) {
@@ -653,18 +653,18 @@ internal class ClusterRenderer<Clustering, T : ClusterItem, RealMarker, Marker :
     }
 
     /**
-     * Get the tedMarker from a ClusterItem
-     * @param clusterItem ClusterItem which you will obtain its tedMarker
-     * @return a tedMarker from a ClusterItem or null if it does not exists
+     * Get the tedMarker from a TedClusterItem
+     * @param clusterItem TedClusterItem which you will obtain its tedMarker
+     * @return a tedMarker from a TedClusterItem or null if it does not exists
      */
     fun getMarker(clusterItem: T): Marker? {
         return mMarkerCache[clusterItem]
     }
 
     /**
-     * Get the ClusterItem from a tedMarker
-     * @param tedMarker which you will obtain its ClusterItem
-     * @return a ClusterItem from a tedMarker or null if it does not exists
+     * Get the TedClusterItem from a tedMarker
+     * @param tedMarker which you will obtain its TedClusterItem
+     * @return a TedClusterItem from a tedMarker or null if it does not exists
      */
     fun getClusterItem(tedMarker: Marker): T? {
         return mMarkerCache[tedMarker]

@@ -13,7 +13,7 @@ import ted.gun0912.clustering.geometry.TedCameraPosition
 import java.util.concurrent.locks.ReentrantReadWriteLock
 
 
-class ClusterManager<Clustering, C : ClusterItem, RealMarker, Marker : TedMarker<ImageDescriptor>, Map, ImageDescriptor>(
+class ClusterManager<Clustering, C : TedClusterItem, RealMarker, Marker : TedMarker<ImageDescriptor>, Map, ImageDescriptor>(
     builder: BaseBuilder<Clustering, C, RealMarker, Marker, Map, ImageDescriptor>
 ) {
     val map: TedMap<RealMarker, Marker, ImageDescriptor> = builder.map

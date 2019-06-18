@@ -17,11 +17,11 @@
 package ted.gun0912.clustering.clustering.algo
 
 import ted.gun0912.clustering.clustering.Cluster
-import ted.gun0912.clustering.clustering.ClusterItem
+import ted.gun0912.clustering.clustering.TedClusterItem
 import ted.gun0912.clustering.geometry.TedCameraPosition
 
 
-class ScreenBasedAlgorithmAdapter<T : ClusterItem>(private val mAlgorithm: Algorithm<T>) :
+class ScreenBasedAlgorithmAdapter<T : TedClusterItem>(private val mAlgorithm: Algorithm<T>) :
     ScreenBasedAlgorithm<T> {
 
     override val items: Collection<T>

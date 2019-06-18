@@ -6,21 +6,21 @@ import com.naver.maps.map.overlay.Marker
 import com.naver.maps.map.overlay.OverlayImage
 import ted.gun0912.clustering.BaseBuilder
 import ted.gun0912.clustering.TedClustering
-import ted.gun0912.clustering.clustering.ClusterItem
 import ted.gun0912.clustering.clustering.ClusterManager
+import ted.gun0912.clustering.clustering.TedClusterItem
 
-class TedNaverClustering<C : ClusterItem>(clusterManager: ClusterManager<TedNaverClustering<C>, C, Marker, TedNaverMarker, NaverMap, OverlayImage>) :
+class TedNaverClustering<C : TedClusterItem>(clusterManager: ClusterManager<TedNaverClustering<C>, C, Marker, TedNaverMarker, NaverMap, OverlayImage>) :
     TedClustering<TedNaverClustering<C>, C, Marker, TedNaverMarker, NaverMap, OverlayImage>(
         clusterManager
     ) {
 
     companion object {
         @JvmStatic
-        fun <C : TedNaverClusterItem> with(context: Context, map: NaverMap) =
+        fun <C : TedClusterItem> with(context: Context, map: NaverMap) =
             Builder<C>(context, map)
     }
 
-    class Builder<C : TedNaverClusterItem>(context: Context, map: NaverMap) :
+    class Builder<C : TedClusterItem>(context: Context, map: NaverMap) :
         BaseBuilder<TedNaverClustering<C>, C, Marker, TedNaverMarker, NaverMap, OverlayImage>(
             context,
             TedNaverMap(map)
