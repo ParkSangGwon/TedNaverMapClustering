@@ -7,6 +7,7 @@ TedNaverMapClustering는 `네이버지도용 클러스터 유틸리티 라이브
 : Google지도에서만 [Clustering Utility](https://developers.google.com/maps/documentation/android-sdk/utility/marker-clustering)를 통해 클러스터링을 지원했으니까요
 - 한국에서 앱을 서비스하기에는 네이버지도가 더 좋은 기능들이 많지만 클러스터링을 사용하려면 어쩔수 없이 Google지도를 사용할 수 밖에 없었죠..
 - 네이버지도 팀에서 클러스터링기능을 지원해주면 좋겠지만 `나오겠지...나오겠지..` 그렇게 몇년이 지나도 클러스터링 기능은 나오지 않았습니다.
+- 관련 블로그 포스팅: https://gun0912.tistory.com/83
 
 ## 그래서 네이버지도용 클러스터링 라이브러리를 만들었습니다
 
