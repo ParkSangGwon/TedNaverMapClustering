@@ -26,4 +26,4 @@ dependencies {
     implementation deps.androidx.appcompat
 }
 
-apply from: rootProject.file('publish.gradle')
+apply plugin: "com.vanniktech.maven.publish"

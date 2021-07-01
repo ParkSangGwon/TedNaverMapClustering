@@ -37,4 +37,4 @@ dependencies {
     implementation 'com.naver.maps:map-sdk:3.4.0'
     api project(path: ':tedclustering')
 }
-apply from: rootProject.file('publish.gradle')
+apply plugin: "com.vanniktech.maven.publish"
