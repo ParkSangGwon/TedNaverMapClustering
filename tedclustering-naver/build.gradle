@@ -24,7 +24,7 @@ android {
 repositories {
     // 네이버 지도 저장소
     maven {
-        url 'https://navercorp.bintray.com/maps'
+        url "https://naver.jfrog.io/artifactory/maven/"
     }
 }
 
@@ -37,4 +37,4 @@ dependencies {
     implementation 'com.naver.maps:map-sdk:3.4.0'
     api project(path: ':tedclustering')
 }
-apply from: rootProject.file('publish.gradle')
+apply plugin: "com.vanniktech.maven.publish"
