@@ -21,7 +21,7 @@ TedNaverMapClustering는 `네이버지도용 클러스터 유틸리티 라이브
 
 
 ### Gradle
-[ ![Download](https://api.bintray.com/packages/tkdrnjs0912/maven/tedclustering-naver/images/download.svg) ](https://bintray.com/tkdrnjs0912/maven/tedclustering-naver/_latestVersion)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.ParkSangGwon/tedclustering-naver.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22io.github.ParkSangGwon%22%20AND%20a:%tedclustering-naver%22)
 ```gradle
 dependencies {
     implementation 'gun0912.ted:tedclustering-naver:x.y.z'
